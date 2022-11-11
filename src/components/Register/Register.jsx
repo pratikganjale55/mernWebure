@@ -21,7 +21,7 @@ const Register = () => {
           
            
 
-         await fetch("http://localhost:5000/register", {
+         await fetch("https://appendserver1.herokuapp.com/register", {
             headers : {
                 "Content-Type" : "application/json"
             },

@@ -16,7 +16,7 @@ const Dashboard = () => {
 
   const id = JSON.parse(localStorage.getItem("devId")) ;
   console.log(id)
-          await axios.get(`http://localhost:5000/about/${id}`) 
+          await axios.get(`https://appendserver1.herokuapp.com/about/${id}`) 
           .then((res) =>  setUserData(res.data))
           .catch((e) => console.log(e))
  }
